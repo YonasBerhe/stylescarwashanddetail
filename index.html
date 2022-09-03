@@ -1,268 +1,317 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Styles Car Wash Detail</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <style type="text/css">
-         @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-         body {
-         background: #eee;
-         padding: 40px 0;
-         }
-         h1 {
-         text-align: center;
-         padding-bottom: 30px;
-         font-family: Montserrat;
-         font-weight: 700;
-         color: #323232;
-         }
-         .card {
-         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.03);
-         border-right: 1px #dde0e2 solid;
-         border-radius: 4px 4px 0 0;
-         position: relative;
-         background-color: white;
-         color: #56575b;
-         margin: 5px 0;
-         }
-         .plan-name {
-         padding: 13px 0;
-         border-bottom: 1px #eff0f2 solid;
-         text-align: center;
-         text-transform: uppercase;
-         font-size: 16px;
-         color: #464c50;
-         font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-         letter-spacing: 1px;
-         }
-         .plan-description {
-         padding: 15px;
-         line-height: normal;
-         /*min-height: 175px;*/
-         font-size: 14px;
-         line-height: 18px;
-         }
-         .plan-price sub {
-         text-transform: none;
-         font-size: 16px;
-         bottom: 0;
-         }
-         .plan-price {
-         color: #56575b;
-         font-family: "Open sans";
-         font-size: 34px;
-         text-transform: uppercase;
-         line-height: 50px;
-         }
-         sub {
-         font-size: 75%;
-         line-height: 0;
-         position: relative;
-         vertical-align: baseline;
-         }
-         .plan-description.specs {
-         min-height: 245px;
-         line-height: 20px;
-         }
-         .plan-cta {
-         position: absolute;
-         bottom: 0px;
-         left: 0;
-         width: 100%;
-         text-align: center;
-         padding: 0 15px;
-         min-height: 95px;
-         &:hover a {
-         opacity: 0.8;
-         color: #fff;
-         text-decoration: none;
-         }
-         }
-         .button,
-         .button-primary {
-         background: #2a5bd7;
-         border-radius: 8px;
-         font-size: inherit;
-         color: white;
-         transition: background 100ms linear;
-         text-decoration: none;
-         line-height: normal;
-         outline: none !important;
-         padding: 0.6em 1em;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <!-- =========================================================
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Styles Car Wash Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+      body {
+        background: #eee;
+        padding: 40px 0;
+      }
+
+      h1 {
+        text-align: center;
+        padding-bottom: 30px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: #323232;
+      }
+
+      h3 {
+        text-align: center;
+        padding-bottom: 30px;
+        font-family: Montserrat;
+        font-weight: 700;
+        color: #323232;
+      }
+
+      .card {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+        border-right: 1px #dde0e2 solid;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        background-color: white;
+        color: #56575b;
+        margin: 5px 0;
+      }
+
+      .plan-name {
+        padding: 13px 0;
+        border-bottom: 1px #eff0f2 solid;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #464c50;
+        font-family: "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .plan-description {
+        padding: 15px;
+        line-height: normal;
+        /*min-height: 175px;*/
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .plan-price sub {
+        text-transform: none;
+        font-size: 16px;
+        bottom: 0;
+      }
+
+      .plan-price {
+        color: #56575b;
+        font-family: "Open sans";
+        font-size: 34px;
+        text-transform: uppercase;
+        line-height: 50px;
+      }
+
+      sub {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      .plan-description.specs {
+        min-height: 245px;
+        line-height: 20px;
+      }
+
+      .plan-cta {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+        min-height: 95px;
+
+        &:hover a {
+          opacity: 0.8;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      .button,
+      .button-primary {
+        background: #2a5bd7;
+        border-radius: 8px;
+        font-size: inherit;
+        color: white;
+        transition: background 100ms linear;
+        text-decoration: none;
+        line-height: normal;
+        outline: none !important;
+        padding: 0.6em 1em;
+      }
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+      }
+
+      .onetimespace {
+        margin-bottom: 101px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- =========================================================
          ----------- Bootstrap Pricing Cards -------------------------
          ========================================================= -->
-      <section>
-         <h1>Styles Car Wash & Detail Subscriptions</h1>
-
-
+    <section>
+      <h1>Styles Car Wash & Detail Subscriptions</h1>
+      
 <div class="container">
   <div class="row">
-    <div class="col">
-      <a href="https://stylescarwashdetail.myshopify.com/">Look at some of our work</a>
-    </div>
-  </div>
+  <div class="col"><a href="https://stylescarwashdetail.myshopify.com/">Look at some of our work</a>
 </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 col-lg-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <div class="plan-name">
-                           Car/Sedan <br> Mini Detail 
-                        </div>
-                        <div class="plan-description">
-                           <div class="plan-price month">
-                              $60<sub> / month</sub>
-                           </div>
-                           <p>*Kent location only
-                              <br>
-                              <br>
-                              Description of Services once a month
-                           </p>
-                        </div>
-                        <div class="plan-description specs">
-                           *Windows<br>*Dashboard/Cup Holders<br>*Vacuum<br>*Full wash & Tire shine<br> *Ceramic Shine 
-                        </div>
-                        <div class="plan-cta">
-                           <p><a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-car?selling_plan=2395767036" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <div class="plan-name">
-                           SUV/Truck <br> Mini Detail
-                        </div>
-                        <div class="plan-description">
-                           <div class="plan-price month">
-                              $80<sub> / month</sub>
-                           </div>
-                           <p>*Kent location only
-                              <br>
-                              <br>
-                              Description of Services once a month
-                           </p>
-                        </div>
-                        <div class="plan-description specs">
-                           *Windows<br>*Dashboard/Cup Holders<br>*Vacuum<br>*Full wash & Tire shine<br> *Ceramic Shine
-                        </div>
-                        <div class="plan-cta">
-                           <p><a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-truck" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <div class="plan-name">
-                           Car/Sedan <br> Mini Detail
-                        </div>
-                        <div class="plan-description">
-                           <div class="plan-price month">
-                              $65<sub> / month</sub>
-                           </div>
-                           <p>*Mobile detailing only
-                              <br>
-                              <br>
-                              Description of Services once a month
-                           </p>
-                        </div>
-                        <div class="plan-description specs">
-                           *Windows<br>*Dashboard/Cup Holders<br>*Vacuum<br>*Full wash & Tire shine<br> *Ceramic Shine
-                        </div>
-                        <div class="plan-cta">
-                           <p><a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-car-mobile-detailing" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <div class="plan-name">
-                           SUV/Truck <br> Mini Detail
-                        </div>
-                        <div class="plan-description">
-                           <div class="plan-price month">
-                              $85<sub> / month</sub>
-                           </div>
-                           <p>*Mobile detailing only
-                              <br>
-                              <br>
-                              Description of Services once a months
-                           </p>
-                        </div>
-                        <div class="plan-description specs">
-                           *Windows<br>*Dashboard/Cup Holders<br>*Vacuum<br>*Full wash & Tire shine<br> *Ceramic Shine
-                        </div>
-                        <div class="plan-cta">
-                           <p><a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-truck-mobile-detailing" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
 
-               <div class="col-md-6 col-lg-3">
-                  <div class="card">
-                     <div class="card-body">
-                        <div class="plan-name">
-                           3rd row seating/mini vans 
-                        </div>
-                        <div class="plan-description">
-                           <div class="plan-price month">
-                              $100<sub> / month</sub>
-                           </div>
-                           <p>*Mobile detailing only or kent location by appointment
-                              <br>
-                              <br>
-                              Description of Services once a months
-                           </p>
-                        </div>
-                        <div class="plan-description specs">
-                           *Windows<br>*Dashboard/Cup Holders<br>*Vacuum<br>*Full wash & Tire shine<br> *Ceramic Shine
-                        </div>
-                        <div class="plan-cta">
-                           <p><a class="button" href="https://stylescarwashdetail.myshopify.com/products/3rd-row-seating-mini-vans" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a></p>
-                        </div>
-                     </div>
+</div>
+
+</div>
+
+
+
+      <div class="container">
+        <div class="row">
+          <!-- Link to one times cleans -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> One Time Cleans!!! </div>
+                <div class="plan-description onetimespace">
+                  <div class="plan-price month">
+                    <sub></sub>
                   </div>
-               </div>
+                  <!-- <p>Our one time cleans now online! <br>
+                    <br> Choose between our mobile <br>cleans & our Kent Washington cleans -->
+                    <p>Our one time cleans are now coming online soon! <br>
+                    <br> Choose between our mobile <br>cleans & our Kent Washington cleans
+                  </p>
+                </div>
+                <div class="dropdown plan-cta">
+                  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Mobile or Station </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="https://stylescarwashdetail.myshopify.com/collections/mobile-cleans">Mobile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://stylescarwashdetail.myshopify.com/collections/kent-cleans">Kent Station</a>
+                    </li>
+                    <!-- <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
             </div>
-         </div>
-         <!-- ./container-->
-      </section>
-<section>
-   <footer class="footer">
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col" style="text-align: center;">
-      <a href="https://www.facebook.com/pages/category/Cars/Styles-Car-Detail-110520900544080/">Facebook</a>
-    </div>
-    <div class="col" style="text-align: center;">
-      <a href="https://www.instagram.com/stylescardetail">Instagram</a>
-    </div>
-    <div class="col" style="text-align: center;">
-      <a href="https://twitter.com/stylescardetail">Twitter</a>
-    </div>
-  </div>
-</div>
-   </footer>
-
-</section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   </body>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> Car/Sedan <br> Mini Detail </div>
+                <div class="plan-description">
+                  <div class="plan-price month"> $60 <sub> / month</sub>
+                  </div>
+                  <p>*Kent location only <br>
+                    <br> Description of Services once a month
+                  </p>
+                </div>
+                <div class="plan-description specs"> *Windows <br>*Dashboard/Cup Holders <br>*Vacuum <br>*Full wash & Tire shine <br> *Ceramic Shine </div>
+                <div class="plan-cta">
+                  <p>
+                    <a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-car?selling_plan=2395767036" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> SUV/Truck <br> Mini Detail </div>
+                <div class="plan-description">
+                  <div class="plan-price month"> $80 <sub> / month</sub>
+                  </div>
+                  <p>*Kent location only <br>
+                    <br> Description of Services once a month
+                  </p>
+                </div>
+                <div class="plan-description specs"> *Windows <br>*Dashboard/Cup Holders <br>*Vacuum <br>*Full wash & Tire shine <br> *Ceramic Shine </div>
+                <div class="plan-cta">
+                  <p>
+                    <a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-truck" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> Car/Sedan <br> Mini Detail </div>
+                <div class="plan-description">
+                  <div class="plan-price month"> $65 <sub> / month</sub>
+                  </div>
+                  <p>*Mobile detailing only <br>
+                    <br> Description of Services once a month
+                  </p>
+                </div>
+                <div class="plan-description specs"> *Windows <br>*Dashboard/Cup Holders <br>*Vacuum <br>*Full wash & Tire shine <br> *Ceramic Shine </div>
+                <div class="plan-cta">
+                  <p>
+                    <a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-car-mobile-detailing" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> SUV/Truck <br> Mini Detail </div>
+                <div class="plan-description">
+                  <div class="plan-price month"> $85 <sub> / month</sub>
+                  </div>
+                  <p>*Mobile detailing only <br>
+                    <br> Description of Services once a months
+                  </p>
+                </div>
+                <div class="plan-description specs"> *Windows <br>*Dashboard/Cup Holders <br>*Vacuum <br>*Full wash & Tire shine <br> *Ceramic Shine </div>
+                <div class="plan-cta">
+                  <p>
+                    <a class="button" href="https://stylescarwashdetail.myshopify.com/products/styles-mini-truck-mobile-detailing" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="plan-name"> 3rd row seating/mini vans </div>
+                <div class="plan-description">
+                  <div class="plan-price month"> $100 <sub> / month</sub>
+                  </div>
+                  <p>*Mobile detailing only or kent location by appointment <br>
+                    <br> Description of Services once a months
+                  </p>
+                </div>
+                <div class="plan-description specs"> *Windows <br>*Dashboard/Cup Holders <br>*Vacuum <br>*Full wash & Tire shine <br> *Ceramic Shine </div>
+                <div class="plan-cta">
+                  <p>
+                    <a class="button" href="https://stylescarwashdetail.myshopify.com/products/3rd-row-seating-mini-vans" data-open="get-pro-modal" aria-controls="get-pro-modal" aria-haspopup="true" tabindex="0">Get Started</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./container-->
+    </section>
+    <section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <a href="https://www.facebook.com/pages/category/Cars/Styles-Car-Detail-110520900544080/">Facebook</a>
+            </div>
+            <div class="col" style="text-align: center;">
+              <a href="https://www.instagram.com/stylescardetail">Instagram</a>
+            </div>
+            <div class="col" style="text-align: center;">
+              <a href="https://twitter.com/stylescardetail">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.dropdown-submenu a.test').on("click", function(e) {
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
 </html>
